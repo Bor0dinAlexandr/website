@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     color: white;
+    font-size: x-large;
 }
 
 header{
@@ -29,12 +30,45 @@ nav a{
     font-size: x-large;
     color: white;
 }
-.a{
-    background-image: url('back.png');
+.container{
+    background-image: url('back.jpg');
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container::before{
+    content: "";
+    display: block;
+}
+.containerSlogon{
+    display: flex;
+    justify-content: center;
+}
+.slogon{
+    width: 50%;
+}
+.containerSlogon::after{
+    content: "";
+    display: block;
+    width: 50%;
+}
+.containerInfo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 3vh 0;
+}
+.containerInfo div{
+    width: 20%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.containerInfo div p {
+    font-weight: bold;
 }
