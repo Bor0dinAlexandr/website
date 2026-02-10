@@ -1,3 +1,7 @@
+:root{
+    --main-width: 60%;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -8,26 +12,34 @@
 header{
     background: linear-gradient(black , transparent);
     width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: space-around;
-    align-items: center;
+    height: 6vh;
     position: absolute;
+    display: flex;
+    justify-content: center;
 }
+header div{
+    width: var(--main-width);
+    display: flex;
 
+}
+.logo{
+    width: 30%;
+}
 .logo img{
     filter: invert(0.9)
 }
-
+.containerNav{
+    width: 70%;
+}
 nav {
+    width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 }
 nav a{
     padding: 5px;
     margin: 0 15px;
-    font-size: x-large;
+    font-size: 125%;
     color: white;
 }
 .container{
@@ -49,6 +61,7 @@ nav a{
 .containerSlogon{
     display: flex;
     justify-content: center;
+    width: var(--main-width);
 }
 .slogon{
     width: 50%;
@@ -59,8 +72,9 @@ nav a{
     width: 50%;
 }
 .containerInfo{
+    width: var(--main-width);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 0 3vh 0;
 }
 .containerInfo div{
@@ -71,4 +85,10 @@ nav a{
 
 .containerInfo div p {
     font-weight: bold;
+}
+.a{
+    font-size: 400%;
+}
+.b{
+    font-size: 100%;
 }
