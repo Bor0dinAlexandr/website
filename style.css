@@ -37,10 +37,26 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-nav a{
-    padding: 5px;
-    margin: 0 15px;
+
+.adres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.adre{
+    font-size: 75%;
+
+}
+.adress{
+    font-size: 50%;
+}
+.containert{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(transparent 10%, black  );
+}
+
 .container{
     background-image: url('back.jpg');
     width: 100vw;
