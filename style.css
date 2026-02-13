@@ -1,10 +1,11 @@
 :root{
     --main-width: 60%;
+    --cutaway-and-header-color:rgb(213, 227, 226);
+    --services-elem-bg: white;
 }
 *{
     padding: 0;
     margin: 0;
-    color: rgb(213, 227, 226);
     font-size: x-large;
 }
 
@@ -28,6 +29,7 @@ header{
     position: absolute;
     display: flex;
     justify-content: center;
+    color: var(--cutaway-and-header-color)
 }
 header div{
     width: var(--main-width);
@@ -64,6 +66,7 @@ nav p a:last-child{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: var(--cutaway-and-header-color)
 }
 #cutaway::before{
     content: "";
@@ -107,6 +110,59 @@ h1{
 
 
 
-#services>div{
+#services{
+    color: black;
+    justify-content: start;
+    background-color: gainsboro;
+}
+#services>*{
     width: var(--main-width);
+}
+#services>div{
+    margin: 1vh 0;
+    padding: 3vh 0;
+
+}
+#services>div>h2{
+    display: block;
+    font-size: 300%;
+
+}
+#services>details{
+    margin-bottom: 10px;
+}
+#services>details>summary{
+    padding: 2vh 0;
+    font-size: 150%;
+    background-color: var(--services-elem-bg);
+}
+
+#services>details>div{
+    margin-top: 5px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--services-elem-bg);
+}
+#services>details>div>div:first-child{
+    width: 40%;
+    height: 100%;
+}
+#automobile>div>div:first-child{
+    background-image: url('automobile.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#classic>div>div:first-child{
+    background-image: url('classic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#passes>div>div:first-child{
+    background-image: url('passes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
