@@ -66,7 +66,7 @@ nav p a:last-child{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--cutaway-and-header-color)
+    color: var(--cutaway-and-header-color);
 }
 #cutaway::before{
     content: "";
@@ -113,56 +113,52 @@ h1{
 #services{
     color: black;
     justify-content: start;
-    background-color: gainsboro;
+    background-image: url('bricks_seamless_texture_3420.jpg');
+    animation: services 15s linear  infinite;
 }
 #services>*{
     width: var(--main-width);
 }
 #services>div{
-    margin: 1vh 0;
-    padding: 3vh 0;
-
+    margin: 3px 0;
 }
 #services>div>h2{
     display: block;
     font-size: 300%;
-
+    margin: 3vh 0;
 }
-#services>details{
-    margin-bottom: 10px;
+.service{
+    background-color: var(--services-elem-bg);
 }
-#services>details>summary{
+.service>label{
+    display: block;
     padding: 2vh 0;
     font-size: 150%;
-    background-color: var(--services-elem-bg);
+    margin-bottom: 2px 0;
+    border-bottom: 1px solid gainsboro;
+}
+.isNotActiveService{
+    display: none;
+}
+.service>div{
+    height: 40vh;
+}
+.service>div>div:first-child{
+    background-image: url('back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
 }
 
-#services>details>div{
-    margin-top: 5px;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--services-elem-bg);
-}
-#services>details>div>div:first-child{
-    width: 40%;
-    height: 100%;
-}
-#automobile>div>div:first-child{
-    background-image: url('automobile.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#classic>div>div:first-child{
-    background-image: url('classic.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#passes>div>div:first-child{
-    background-image: url('passes.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+@keyframes services{
+    from{
+        background-position: bottom 0px right 0px;
+    }
+    to {
+        background-position: bottom -1000px right -1000px;
+    }
 }

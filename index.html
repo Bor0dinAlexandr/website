@@ -64,28 +64,38 @@
                 <div>
                     <h2>Что мы можем вам предложить</h2>
                 </div>
-                <details id="automobile" open>
-                    <summary>Автомобильные ключи</summary>
-                    <div>
+                <div id="automobile" class="service">
+                    <label>
+                        <input type="radio" name="service" data-name-service="automobile" checked/>
+                        Автомобильные ключи
+                    </label>
+                    <div data-name-service="automobile">
                         <div></div>
                         <div></div>
                     </div>
-                </details>
-                <details id="classic">
-                    <summary>Классические модели</summary>
-                    <div>
+                </div>
+                <div id="classic" class="service">
+                    <label>
+                        <input type="radio" name="service" data-name-service="classic"/>
+                        Классические модели
+                    </label>
+                    <div class="isNotActiveService" data-name-service="classic">
                         <div></div>
                         <div></div>
                     </div>
-                </details>
-                <details id="passes">
-                    <summary>Пропуска и прочее</summary>
-                    <div>
+                </div>
+                <div id="passes" class="service">
+                    <label>
+                        <input type="radio" name="service"data-name-service="passes"/>
+                        Пропуска и прочее
+                    </label>
+                    <div class="isNotActiveService" data-name-service="passes">
                         <div></div>
                         <div></div>
                     </div>
-                </details>
+                </div>
             </div>
         </main>
+        <script src="services.js"></script>
     </body>
 </html>
