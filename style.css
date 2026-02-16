@@ -113,8 +113,8 @@ h1{
 #services{
     color: black;
     justify-content: start;
-    background-image: url('bricks_seamless_texture_3420.jpg');
-    animation: services 15s linear  infinite;
+    background-image: url('test.png');
+    animation: services 45s linear  infinite;
 }
 #services>*{
     width: var(--main-width);
