@@ -4,8 +4,6 @@ let servicesContent = document.querySelectorAll(".service>div");
 
 let serviceContentOpen = serviceContent =>{
     serviceContent.classList.remove("isNotActiveService");
-    services.style.backgroundImage = `url(${serviceContent.dataset.nameService}.png)`;
-
 }
 
 let serviceContentClose = serviceContent =>{

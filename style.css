@@ -113,8 +113,7 @@ h1{
 #services{
     color: black;
     justify-content: start;
-    background-image: url('test.png');
-    animation: services 45s linear  infinite;
+    background-color: gainsboro;
 }
 #services>*{
     width: var(--main-width);
@@ -132,7 +131,7 @@ h1{
 }
 .service>label{
     display: block;
-    padding: 2vh 0;
+    padding: 3vh 0;
     font-size: 150%;
     margin-bottom: 2px 0;
     border-bottom: 1px solid gainsboro;
@@ -141,7 +140,7 @@ h1{
     display: none;
 }
 .service>div{
-    height: 40vh;
+    height: 45vh;
 }
 .service>div>div:first-child{
     background-image: url('back.jpg');
@@ -149,16 +148,5 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    width: 40%;
-}
-
-
-
-@keyframes services{
-    from{
-        background-position: bottom 0px right 0px;
-    }
-    to {
-        background-position: bottom -1000px right -1000px;
-    }
+    width: 45%;
 }
