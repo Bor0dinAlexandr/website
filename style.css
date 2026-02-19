@@ -1,6 +1,7 @@
 :root{
     --main-width: 60%;
     --cutaway-and-header-color:rgb(213, 227, 226);
+    --services-bg: rgb(235, 235, 235);
     --services-elem-bg: white;
 }
 *{
@@ -113,7 +114,7 @@ h1{
 #services{
     color: black;
     justify-content: start;
-    background-color: gainsboro;
+    background-color: var(--services-bg);
 }
 #services>*{
     width: var(--main-width);
@@ -131,10 +132,23 @@ h1{
 }
 .service>label{
     display: block;
-    padding: 3vh 0;
+    padding: 3vh 5%;
     font-size: 150%;
     margin-bottom: 2px 0;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid var(--services-bg);
+    display: flex;
+    justify-content: space-between;
+}
+.service>label>input{
+    opacity: 0;
+}
+.service>label>input + .castomRadio{
+    background-image: url(plus.svg);
+    background-size: contain;
+    width: 10px;
+}
+.service>label>input:checked + .castomRadio::after{
+
 }
 .isNotActiveService{
     display: none;
@@ -154,4 +168,7 @@ h1{
 }
 #classic>div>div:first-child{
     background-image: url('classic.png');
+}
+#passes>div>div:first-child{
+    background-image: url('passes.png');
 }
