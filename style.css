@@ -143,10 +143,15 @@ h1{
     height: 45vh;
 }
 .service>div>div:first-child{
-    background-image: url('back.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 45%;
+}
+#automobile>div>div:first-child{
+    background-image: url('automobile.png');
+}
+#classic>div>div:first-child{
+    background-image: url('classic.png');
 }
