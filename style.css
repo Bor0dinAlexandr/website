@@ -1,13 +1,14 @@
 :root{
     --main-width: 60%;
     --cutaway-and-header-color:rgb(213, 227, 226);
-    --services-bg: rgb(235, 235, 235);
+    --services-bg: rgb(245, 245, 245);
     --services-elem-bg: white;
 }
 *{
     padding: 0;
     margin: 0;
     font-size: x-large;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -135,7 +136,7 @@ h1{
     padding: 3vh 5%;
     font-size: 150%;
     margin-bottom: 2px 0;
-    border-bottom: 1px solid var(--services-bg);
+    border-bottom: 3px solid var(--services-bg);
     display: flex;
     justify-content: space-between;
 }
@@ -144,11 +145,16 @@ h1{
 }
 .service>label>input + .castomRadio{
     background-image: url(plus.svg);
+    filter: invert(0.5);
     background-size: contain;
-    width: 10px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    transition: transform 1s, opacity 2s;
 }
-.service>label>input:checked + .castomRadio::after{
-
+.service>label>input:checked + .castomRadio{
+    transform: rotate(45deg);
+    opacity: 30%;
 }
 .isNotActiveService{
     display: none;
