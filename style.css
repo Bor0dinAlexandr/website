@@ -178,20 +178,32 @@ h1{
 }
 .service>div>div:last-child{
     width: 55%;
-    padding: 3% 5% 7% 5%;
-    color: rgb(50, 50, 50);
+    padding: 3% 5% 3% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.service>div>div:last-child *{
+.service>div>div:last-child>div:first-child *{
     font-size: 80%;
     margin-bottom: 10px;
+    color: rgb(50, 50, 50) ;
 }
-.service>div>div:last-child>ul li{
+.service>div>div:last-child>div:first-child>ul li{
     margin-left: 10px;
 }
-.service>div>div:last-child>ul li::marker{
+.service>div>div:last-child>div:first-child>ul li::marker{
     content: "";    
 }
-
+.service a{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: rgb(74, 151, 99);
+    font-size: 80%;
+    color: rgb(240, 237, 240);
+    padding: 6px 15px;
+    text-decoration:none;
+}
 #automobile>div>div:first-child{
     background-image: url('automobile.png');
 }
