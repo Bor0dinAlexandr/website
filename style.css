@@ -9,6 +9,7 @@
     margin: 0;
     font-size: x-large;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
 }
 
 
@@ -48,6 +49,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+nav a{
+    color: var(--cutaway-and-header-color);
+    text-decoration:none;
 }
 nav p{
     display: flex;
@@ -186,6 +191,7 @@ h1{
 .service>div>div:last-child>ul li::marker{
     content: "";    
 }
+
 #automobile>div>div:first-child{
     background-image: url('automobile.png');
 }
