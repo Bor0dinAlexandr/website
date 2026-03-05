@@ -157,10 +157,12 @@ h1{
     opacity: 30%;
 }
 .isNotActiveService{
-    display: none;
+    display: none !important;
 }
 .service>div{
     height: 45vh;
+    display: flex;
+    flex-direction: row;
 }
 .service>div>div:first-child{
     background-position: center;
@@ -168,6 +170,21 @@ h1{
     background-size: cover;
     height: 100%;
     width: 45%;
+}
+.service>div>div:last-child{
+    width: 55%;
+    padding: 3% 5% 7% 5%;
+    color: rgb(50, 50, 50);
+}
+.service>div>div:last-child *{
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+.service>div>div:last-child>ul li{
+    margin-left: 10px;
+}
+.service>div>div:last-child>ul li::marker{
+    content: "";    
 }
 #automobile>div>div:first-child{
     background-image: url('automobile.png');
